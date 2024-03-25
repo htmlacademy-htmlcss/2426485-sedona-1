@@ -12,7 +12,7 @@
         <ul class="navigation-list">
             <li class="navigation-item">
                 <a href="index.html" class="navigation-logo">
-                    <img src="#" alt="Логотип Сайта">
+                    <img src="images/index-imgages/sedona-logo.svg" width="140" height="70" alt="Логотип Сайта">
                 </a>
             </li>
             <li class="navigation-item">
@@ -34,27 +34,27 @@
 
         <ul class="user-list">
             <li class="user-item">
-                <span class="visually-hidden">
-                    Поиск
-                </span>
+                <button class = "nav-search-button" type="button">
+                  <span class="visually-hidden">Иконка-поиск</span>
+                </button>
             </li>
             <li class="user-item">
-                <span class="visually-hidden">
-                    Избранное
-                </span>
+              <a href="#" class="view-type-button active">
+                <span class="visually-hidden">Иконка-избранное</span>
+              </a>
             </li>
         </ul>
-
-        <a href="#" class="nav-button">Хочу сюда!</a>
+        <button class="nav-button" type="button">Хочу сюда!</button>
     </nav>
-  </header>
+</header>
+
 
   <section class="hero">
     <h1 class="main-title">Гостиницы Седоны</h1>
     <ol class="breadcrumbs-list">
       <li class="breadcrumbs-item">
         <a href="index.html" class="breadcrumbs-link">
-          <span class="visually-hidden">Иконка домашней страницы</span>
+          <span class="visually-hidden">Иконка-домашняя-страница</span>
         </a>
       </li>
       <li class="breadcrumbs-item">
@@ -65,8 +65,8 @@
 
   <section class="search-filter">
     <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
-    <form action="" class="search-filters" method="get">
 
+    <form action="" class="search-filters" method="get">
       <fieldset class="search-filters-group infrastructure-type">
         <legend class="infrastructure-type-title">Инфраструктура:</legend>
         <ul class="infrastructure-list">
@@ -127,14 +127,13 @@
         </label>
       </fieldset>
       <button type="submit" class="filter-button active">Применить</button>
-      <button class="filter-button">Сбросить</button>
+      <button class="filter-button" type="reset">Сбросить</button>
     </form>
-
-
   </section>
 
   <section class="catalog">
-    <h2 class="catalog-title">Найдено страниц: 38</h2>
+    <h2 class="visually-hidden">Каталог</h2>
+    <p class="search-results">Найдено страниц: 38<p>
     <select aria-label="Сортировка" class="select-control">
       <option value="cheap">Сначала дешёвые</option>
       <option value="expensive">Сначала Дорогие</option>
@@ -143,26 +142,26 @@
 
     <ul class="view-types-list">
       <li class="view-types-item">
-        <a href="#" class="view-type-button active">
-          <span class="visually-hidden">Показать стенкой</span>
-        </a>
+        <button class="view-type-button" type="button">
+          <img src="images/catalog-images/view-mode-icon-1.svg" alt="отображение сеткой">
+        </button>
       </li>
       <li class="view-types-item">
-        <a href="#" class="view-type-button">
-          <span class="visually-hidden">Показать во всю страницу</span>
-        </a>
+        <button class="view-type-button" type="button">
+          <img src="images/catalog-images/view-mode-icon-2.svg" alt="отображение стенкой">
+        </button>
       </li>
       <li class="view-types-item">
-        <a href="#" class="view-type-button">
-          <span class="visually-hidden">Показать списком</span>
-        </a>
+        <button class="view-type-button" type="button">
+          <img src="images/catalog-images/view-mode-icon-2.svg" alt="отображение стенкой">
+        </button>
       </li>
     </ul>
 
     <ul class="hotel-cards-list">
       <li class="hotel-card-item">
         <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-        <img src="#" alt="Отель Amara Resort">
+        <img src="images/catalog-images/hotel-amara.jpg" alt="Отель Amara Resort">
         <p class="card-text housing-type">гостиница</p>
         <p class="card-text price">От 4000р</p>
         <a href="#" class="card-link details-button">Подробнее</a>
@@ -172,7 +171,7 @@
 
       <li class="hotel-card-item">
         <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-        <img src="#" alt="Отель Villas at Poco Diablo">
+        <img src="images/catalog-images/hotel-villas.jpg" alt="Отель Villas at Poco Diablo">
         <p class="card-text housing-type">гостиница</p>
         <p class="card-text price">От 5000р</p>
         <a href="#" class="card-link details-button">Подробнее</a>
@@ -182,7 +181,7 @@
 
       <li class="hotel-card-item">
         <h3 class="hotel-card-title">Desert Quail Inn</h3>
-        <img src="#" alt="Отель Desert Quail Inn">
+        <img src="images/catalog-images/hotel-desert.jpg" alt="Отель Desert Quail Inn">
         <p class="card-text housing-type">гостиница</p>
         <p class="card-text price">От 2500р</p>
         <a href="#" class="card-link details-button">Подробнее</a>
@@ -192,7 +191,7 @@
 
       <li class="hotel-card-item">
         <h3 class="hotel-card-title">GreenTree Inn</h3>
-        <img src="#" alt="GreenTree Inn">
+        <img src="images/catalog-images/hotel-greentree.jpg" alt="GreenTree Inn">
         <p class="card-text housing-type">гостиница</p>
         <p class="card-text price">От 1500р</p>
         <a href="#" class="card-link details-button">Подробнее</a>
@@ -245,28 +244,28 @@
 
 </main>
     <footer class="page-footer">
-        <ul class="social-list">
-            <li class="social-item">
-                <a href="#" class="social-link">
-                    <img src="#" alt="логотип VK">
-                </a>
-            </li>
-            <li class="social-item">
-                <a href="#" class="social-link">
-                    <img src="#" alt="логотип Telegram">
-                </a>
-            </li>
-            <li class="social-item">
-                <a href="#" class="social-link">
-                    <img src="#" alt="логотип YouTube">
-                </a>
-            </li>
-        </ul>
+      <ul class="social-list">
+        <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Логотип-Vkontakte</span>
+            </a>
+        </li>
+        <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Логотип-Telegramm</span>
+            </a>
+        </li>
+        <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Логотип-YouTube</span>
+            </a>
+        </li>
+    </ul>
 
         <a href="tel:+78128121212" class="footer-phone">+7 (812) 812 12 12</a>
 
         <a href="#" class="dev-logo">
-            <img src="#" alt="логотип HTML Academy">
+          <img src="images/index-imgages/html-academy-logo.svg" alt="логотип HTML Academy" width="114.9" height="32.9">
         </a>
     </footer>
 </body>
