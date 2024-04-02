@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог сайта Седона</title>
-  <link rel="stylesheet" href="css/catalog-style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <main class="page-main">
@@ -13,7 +13,7 @@
         <ul class="navigation-list">
             <li class="navigation-item">
                 <a href="index.html" class="navigation-logo">
-                    <img src="images/catalog-images/sedona-logo.svg" width="140" height="70" alt="Логотип Сайта">
+                    <img src="images/index-images/sedona-logo.svg" width="140" height="70" alt="Логотип Сайта">
                 </a>
             </li>
             <li class="navigation-item">
@@ -36,11 +36,11 @@
         <ul class="user-list">
             <li class="user-item">
                 <button class = "nav-search-button" type="button">
-                  <span class="visually-hidden">Иконка-поиск</span>
+                  <span class="visually-hidden">Иконка-поиска</span>
                 </button>
             </li>
             <li class="user-item">
-              <a href="#" class="view-type-button active">
+              <a href="#" class="nav-favourite-button link-style active">
                 <span class="visually-hidden">Иконка-избранное</span>
               </a>
             </li>
@@ -50,11 +50,11 @@
 </header>
 
   <div class="top-sections-container">
-    <section class="hero">
+    <section class="catalog-hero">
       <h1 class="main-title">Гостиницы Седоны</h1>
       <ol class="breadcrumbs-list">
         <li class="breadcrumbs-item">
-          <a href="index.html" class="breadcrumbs-link link-style">
+          <a href="index.html" class="breadcrumbs-link breadcrumbs-homepage link-style">
             <span class="visually-hidden">Иконка-домашняя-страница</span>
           </a>
         </li>
@@ -127,8 +127,8 @@
             До
           </label>
         </fieldset>
-        <button type="submit" class="filter-button active">Применить</button>
-        <button class="filter-button" type="reset">Сбросить</button>
+        <button type="submit" class="filter-button">Применить</button>
+        <button class="filter-button transparent" type="reset">Сбросить</button>
       </form>
     </section>
   </div>
@@ -237,30 +237,33 @@
 
 
   <section class="distribution">
-    <h2 class="distribution-title h-styles">Подпишитесь на рассылку</h2>
+    <h2 class="distribution-title">Подпишитесь на рассылку</h2>
     <p class="distribution-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form action="send" class="distribution-form">
-        <input type="email" value = "Ваш e-mail">
-        <button type="button">Подписаться</button>
+    <form action="#" class="distribution-form">
+        <label class="distribution-label">
+          <span class="visually-hidden">E-mail</span>
+            <input id="email-input" type="email" value = "Ваш e-mail">
+        </label>
+        <button class="distribution-button" type="submit">Подписаться</button>
     </form>
-  </section>
+</section>
 
 </main>
 <footer class="page-footer">
   <ul class="social-list">
-      <li class="social-item Vkontakte">
-          <a href="#" class="social-link link-style visually-hidden">
-            <span class="visuall-hidden">Логотип-Vkontakte</span>
+      <li class="social-item">
+          <a href="#" class="social-link link-style Vkontakte">
+            <span class="visually-hidden">Логотип-Vkontakte</span>
           </a>
       </li>
-      <li class="social-item Telegramm">
-          <a href="#" class="social-link link-style visually-hidden">
-            <span class="visuall-hidden">Логотип-Telegramm</span>
+      <li class="social-item">
+          <a href="#" class="social-link link-style Telegramm">
+            <span class="visually-hidden">Логотип-Telegramm</span>
           </a>
       </li>
-      <li class="social-item YouTube">
-          <a href="#" class="social-link link-style visually-hidden">
-            <span class="visuall-hidden">Логотип-YouTube</span>
+      <li class="social-item">
+          <a href="#" class="social-link link-style YouTube">
+            <span class="visually-hidden">Логотип-YouTube</span>
           </a>
       </li>
   </ul>
